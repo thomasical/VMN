@@ -1,0 +1,3 @@
+<?php
+
+// VMG Theme

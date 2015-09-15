@@ -1,0 +1,32 @@
+## Version History
+
+x.x (mm/dd/yyyy):
+
+3.0.1 (03/21/2015):
+ - fix wsod on exception handler
+
+3.0 (03/21/2015):
+ - upgrade compatibility with 1.10
+
+2.0.1 (03/21/2015):
+ - fix wsod on exception handler
+
+2.0 (03/21/2015):
+ - upgrade for compatibility with 1.9
+ - general code cleanup
+ - performance tweaks (don't repeatedly hit db for handler settings)
+ - fixed some bugs
+ - removed some superfluous checks
+ - added handler updates on outgoing message queue notifications
+ - added handler updates on outgoing emails
+
+1.2 ():
+  - fixes normalization of empty menu urls
+
+1.1 (02/23/2013):
+  - fixes link urls in menu hooks
+  - fixes compatibility with other plugins that use the 'route', pagehandler hook
+  - moves settings form to *real* plugin settings page
+
+1.0 (03/18/2012):
+  - Initial Release
