@@ -1,0 +1,32 @@
+{
+	"name": "hypejunction/hypedropzone",
+	"type": "elgg-plugin",
+	"description": "Drag-n-drop file uploads for Elgg",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "upload", "dropzone", "drag-n-drop"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"extra": {
+		"installer-name": "hypeDropzone"
+	},
+	"config": {
+		"vendor-dir": "/vendor/"
+	},
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "1.*",
+		"hypejunction/hypeapps": "4.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	}
+}
