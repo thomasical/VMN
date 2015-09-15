@@ -1,0 +1,7 @@
+#Ignore files that will need to be changed locally
+engine/settings.php
+php_errors.log
+.DS_Store
+.htaccess
+/nbproject/
+web_sitemap*
