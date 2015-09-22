@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WideImage' => array($vendorDir . '/smottt/wideimage/lib'),
-    '' => array($baseDir . '/classes'),
+    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
+    '' => array($baseDir . '/classes', $baseDir . '/tests/phpunit'),
 );
