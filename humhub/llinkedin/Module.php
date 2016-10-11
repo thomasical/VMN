@@ -25,7 +25,7 @@ class Module extends \humhub\components\Module {
 
     public function disable() {
         $result = \Yii::$app->db->createCommand("TRUNCATE TABLE `llinkedin`")->execute();
-        $result = \Yii::$app->db->createCommand("TRUNCATE TABLE `linkedin_loginpage_content`")->execute();
+        $result = \Yii::$app->db->createCommand("TRUNCATE TABLE `llinkedin_loginpage_content`")->execute();
         parent::disable();
     }
 
