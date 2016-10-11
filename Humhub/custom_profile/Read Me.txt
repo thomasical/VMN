@@ -1,0 +1,65 @@
+Custom Profile Pages HumHub Module
+===========================
+
+The Custom Profile Pages (CPP) HumHub Module allows HumHub Site Administrators to create custom profile pages that contain one or more Administrator specified profile fields. Admin can create any number of custom profile pages and admin can use these pages for a survey and user can answer to each question. Admin has the option to add and delete question dynamically.
+
+Each CPP has 3 core pages:
+
+1) a page the user's sees when viewing their own CPP 
+2) a page the user's sees when viewing other users' CPP page  
+3) a custom member directory specific to each CPP  
+  
+
+
+## Installation
+
+- Download Module 
+- Put it into protected/modules/
+- Enable module under Admin -> Modules
+- Click "Configure" to go to Custom Profile Pages administration page 
+- Enable pretty url.
+  Steps:
+	- Go to <your root folder> \protected\humhub\config
+	- Edit web.php
+	- Place below mentioned code in 'components' 
+
+'urlManager' => [
+            'class' => 'yii\web\UrlManager',           
+            'enablePrettyUrl' => true,
+            'showScriptName' => true,
+            'rules' => [
+			'/' => 'user/auth/login',
+			'custom_profile/default/directory/<pid:\d+>'=>'custom_profile/default/directory',
+			'custom_profile/default/view/<uid:\d+>/<pid:\d+>/<pdata:\d+>' => 'custom_profile/default/view', 
+			'custom_profile/default/edit-profile/<pid:\d+>' => 'custom_profile/default/edit-profile',
+
+           		]
+	],
+
+	- Save web.php
+
+- Signin page URL in administration->custom_profile_page recieves the url to route after log in.
+- Replace the code in " \protected\humhub\modules\user\controllers\ProfileController\actionHome " with the following code to redirect to the specified page which is mentioned in "Signin page URL".
+	
+
+	$signin_url = \humhub\models\Setting::find()->select(['value'])->where(['module_id' => 'custom_profile', 'name' => 'signin_url'])->one();
+        if (empty(Yii::$app->request->referrer)) {
+            return Yii::$app->response->redirect([$signin_url->value]);
+        } else if ((Yii::$app->request->referrer == Url::home(true) . '/custom_profile/customprofile/admin-login')) {
+            if (Yii::$app->user->isAdmin()) {
+                return Yii::$app->response->redirect(['custom_profile/default']);
+            } else {
+                Yii::$app->user->logout();
+                return Yii::$app->response->redirect(Url::home(true));
+            }
+        } else if ((Yii::$app->request->referrer == Url::home(true) . '/user/auth/login') || (Yii::$app->request->referrer == Url::home(true)) || (Yii::$app->request->referrer == Url::home(true) . '/')) {
+            if (Yii::$app->user->isAdmin()) {
+                return Yii::$app->response->redirect(['custom_profile/default']);
+            } else {
+                return Yii::$app->response->redirect([$signin_url->value]);
+            }
+        } else {
+            return $this->render('home', ['user' => $this->contentContainer]);
+        }
+
+

@@ -1,0 +1,11 @@
+{
+    "id": "custom_profile",
+    "name": "Custom Profile Pages",
+    "description": "Allows admins to create custom pages and gives option for user to answer questions.",
+    "keywords": [],
+    "version": "1.0.0",
+    "humhub": {
+        "minVersion": "1.0.1"
+    },
+     "screenshots": ["assets/screen1.jpg", "assets/screen2.jpg", "assets/screen3.jpg"]
+}
