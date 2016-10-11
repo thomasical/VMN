@@ -1,0 +1,478 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color: #fff;
+}
+body.directory-body{
+    background-color: #fafafa !important;
+    padding-top: 85px !important;
+}
+h5{
+    color: #000;
+}
+h4{
+    color: #000;
+}
+a.a-tag {
+    color: #000 !important;
+}
+nav{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0px;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+nav a{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.big-text{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #000;
+    line-height: 45px;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+p.main-text{
+    font-size: 27px;
+    color: #000;
+    max-width: 915px;
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+p{
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+}
+h3{
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+}
+a.animation{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    padding: 30px 20px;
+    font-size: 15px;
+    font-weight: bolder;  
+    margin: 25px 0px 25px 0px;
+    display: block;
+    text-align: center;
+}
+a.animation i{
+    margin-right: 10px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+a.animation:hover{
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+a.animation:focus, a.animation:active{
+    text-decoration: none;
+}
+.new-page-panel{
+    border: 2px solid #000 !important;
+    margin: 100px auto 400px auto;
+}
+.new-page-panel .panel-heading{
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.sign-in-box{
+    width: 530px;
+    border: 2px solid #000;
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 3px;
+    margin: 100px auto 400px auto;
+    color: #fff;
+}
+.sign-in-box ul{
+    padding: 0px 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sign-in-box ul li{
+    color: #000;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    background-size: 20px;
+}
+.sign-in-box h3{
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+.sign-in-box .h3{
+    text-align: center;
+    margin: 0px;
+    background-color: #fff;
+    padding: 15px 0px;
+    color: #000;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.sign-in-box p{
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+.sign-in-box a{
+    position: relative;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 15px;
+    background-color: #007bb5;
+    color: #fff;
+    padding: 15px 15px 15px 60px;
+    font-size: 18px;
+}
+.btn-holder{
+    height: 70px;
+    text-align: center;
+}
+.sign-in-box a span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    line-height: 55px;
+    font-size: 22px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+.sign-in-box a:hover, .sign-in-box a:focus, .sign-in-box a:active{
+    text-decoration: none;
+}
+.topbar{
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    top: 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.topbar .nav>.account{
+    height: 50px;
+    margin-left: 20px;
+}
+.topbar-brand{
+    position: relative;
+    z-index: 2;
+}
+.navbar-brand{
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px;
+}
+.nav>li>a{
+    padding: 8px 15px;
+}
+.topbar .notifications{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+.topbar .notifications .btn-group>a{
+    padding: 5px 10px;
+    margin: 10px 2px;
+    display: inline-block;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: left;
+}
+#topbar-second{
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 50px;
+    background-color: #fff;
+    z-index: 1029;
+    background-image: none;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #d4d4d4;
+}
+#topbar-second .nav{
+    float: left;
+}
+#topbar-second .nav li{
+    float: left;
+}
+.topbar-actions{
+    position: relative;
+    z-index: 3;
+}
+ul#search-menu-nav li a.advanced-search{
+    width: 60px;
+    padding: 4px 0px !important;
+}
+h3.sub-head{
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+}
+ul.new-list-item{
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+ul.new-list-item li{
+    padding: 0px;
+    color: #000;
+    margin: 0px 15px 10px 0px;
+    background-size: 20px;
+}
+p.reg-head{
+    text-align: left;
+}
+/*Member Directory*/
+
+.virtual-business-card{
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+}
+.virtual-business-card-right{
+    width: 35%;
+    float: left; 
+    padding-left: 46px;
+}
+.virtual-business-card-outer{
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid #efefef;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+.virtual-business-card-outer.active{
+    border: 1px solid #000;
+    box-shadow: none;
+}
+.virtual-business-card-outer.active:hover{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.47);
+}
+.virtual-business-card-effect:hover{
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.virtual-business-card-outer .user-info{
+    height: 48px;
+}
+.virtual-business-card-outer h4{
+    font-size: 16px;
+}
+ul.virtual-business-tab{
+    margin-bottom: 10px;
+    border: none;
+}
+ul.virtual-business-tab li a{
+    color: #609;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+    padding: 8px 15px 8px 0px;
+}
+ul.virtual-business-tab li.active a{
+    color: #609;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+}
+ul.virtual-business-tab li.active a:hover, ul.virtual-business-tab li.active a:focus{
+    color: #609;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+}
+ul.virtual-business-tab li a:hover, ul.virtual-business-tab li a:focus{
+    color: #609;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+}
+ul.virtual-business-tab span{
+    float: right;
+    margin: 8px 0px;
+}
+p.virtual-business-text{
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+}
+h4.virtual-business-head{
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+}
+.virtual-business-card-outer .user-info img{
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.virtual-business-card-outer .user-info h5{
+    float: left;
+    margin: 16px 0px 0px 0px;
+}
+.member-directory-outer{
+    margin: 20px 0px;
+}
+.virtual-business-card-left{
+    width: 15%;
+    float: left; 
+    min-height: 1px;
+}
+.tab-pane h4{
+    font-size: 16px;
+}
+.tab-pane h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+.virtual-business-card-outer h5{
+    margin: 5px 0px;
+}
+span.span-tab{
+    padding: 0px 2px;
+    border-radius: 5px;
+    margin: 0px 0px 4px 0px;
+    display: inline-table;
+}
+ul.nav-tabs a.member{
+    color: #000;
+    float: right;
+    padding: 8px 0px;
+    display: none;
+}
+.virtual-business-card-outer .user-info .but-group{
+    float: right;
+    display: inline-table;
+    margin: 4px 0px;
+}
+.virtual-business-card-outer .user-info .but-group a{
+    color: #fff;
+    background-color: #000;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+.virtual-business-card-outer .user-info .but-group a.view-profile{
+    color: #609;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+}
+.virtual-business-card-outer .user-info .but-group a.view-profile i{
+    text-decoration: underline;
+}
+.virtual-business-card-outer .user-info .but-group a.view-profile:hover, .virtual-business-card-outer .user-info .but-group a.view-profile:focus{
+    text-decoration: underline;
+}
+.virtual-business-card-outer .user-info .but-group a:last-child{
+    margin: 0px;
+}
+.virtual-business-card-outer a:hover, .virtual-business-card-outer a:focus{
+    text-decoration: none;
+}
+.virtual-business-card-outer a.linked{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #308be1;
+    padding: 5px 0px;
+    text-decoration: underline;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px){
+    ul.nav-tabs a.member{
+        float: none;
+        display: block;
+        padding: 0px;
+    }
+    .big-text{
+        font-size: 35px;
+        line-height: 35px;
+        margin: 10px 0px 0px 0px;
+    }
+    p.main-text{
+        font-size: 18px;
+        margin: 30px 0px 20px 0px;
+    }
+    p{
+        font-size: 16px;
+    }
+    a.animation{
+        padding: 20px;
+    }
+    .sign-in-box{
+        width: 100%;
+        margin: 40px auto 400px auto;
+    }
+    .virtual-business-card-left{
+        width: 100%;
+    }
+    .virtual-business-card{
+        width: 100%;
+    }
+    virtual-business-card-right{
+        width: 100%;
+    }
+    span.span-tab{
+        margin: 4px 5px 4px 5px;
+    }
+    .virtual-business-card{
+        padding: 0px;
+    }
+    .virtual-business-card-right{
+        width: 100%;
+        padding: 0px;
+    }
+    ul.nav-tabs span{
+        display: none;
+    }
+}
